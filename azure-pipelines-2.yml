@@ -43,7 +43,7 @@ stages:
 
     - task: CopyFiles@2
       inputs:
-        SourceFolder: 'samplewebapp/manifests/'
+        SourceFolder: 'samplewebapp/app/'
         Contents: '**/*.yml'
         TargetFolder: '$(Pipeline.Workspace)/manifests/'
         

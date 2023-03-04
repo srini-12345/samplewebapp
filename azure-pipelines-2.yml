@@ -45,7 +45,7 @@ stages:
       inputs:
         SourceFolder: 'samplewebapp/manifests/'
         Contents: '**/*.yml'
-        TargetFolder: '$(Pipeline.Workspace)/app'
+        TargetFolder: '$(Pipeline.Workspace)/manifests/'
         
        
 #    - task: PublishPipelineArtifact@1

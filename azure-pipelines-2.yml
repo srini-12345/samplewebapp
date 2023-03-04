@@ -43,14 +43,14 @@ stages:
 
     - task: CopyFiles@2
       inputs:
-        SourceFolder: 'samplewebapp/app/SampleWebApp/'
+        SourceFolder: 'samplewebapp/app'
         Contents: '**/*.yml'
         TargetFolder: '$(Pipeline.Workspace)/app'
-    - task: PublishPipelineArtifact@1
-      inputs:
-        targetPath: '$(Pipeline.Workspace)/app'
-        artifact: 'manifests'
-        publishLocation: 'pipeline'
+#    - task: PublishPipelineArtifact@1
+#      inputs:
+#        targetPath: '$(Pipeline.Workspace)/app'
+#        artifact: 'manifests'
+#        publishLocation: 'pipeline'
 
 - stage: Deploy
   displayName: Deploy stage

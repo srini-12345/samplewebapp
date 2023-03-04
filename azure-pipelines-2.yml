@@ -43,7 +43,7 @@ stages:
 
     - task: CopyFiles@2
       inputs:
-        SourceFolder: 'srini-12345/samplewebapp'
+        SourceFolder: 'samplewebapp/manifests/'
         Contents: '**/*.yml'
         TargetFolder: '$(Pipeline.Workspace)/app'
 #    - task: PublishPipelineArtifact@1

@@ -48,11 +48,11 @@ stages:
         TargetFolder: '$(Pipeline.Workspace)/manifests/'
         
        
-#    - task: PublishPipelineArtifact@1
-#      inputs:
-#        targetPath: '$(Pipeline.Workspace)/app'
-#        artifact: 'manifests'
-#        publishLocation: 'pipeline'
+    - task: PublishPipelineArtifact@1
+      inputs:
+        targetPath: '$(Pipeline.Workspace)/manifests/'
+        artifact: 'manifests'
+        publishLocation: 'pipeline'
 
 - stage: Deploy
   displayName: Deploy stage

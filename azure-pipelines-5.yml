@@ -41,7 +41,7 @@ stages:
         tags: |
           $(tag)
 
-    - upload: manifests
+    - upload: samplewebapp/manifests
       artifact: manifests
 
 - stage: Deploy
